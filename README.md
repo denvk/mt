@@ -22,14 +22,17 @@ http://localhost:8080/accounts/create/denis/123.45
 http://localhost:8080/accounts/create/nikolay/0
 ```
 2. get account info:
+```
 denis - account identifier
 http://localhost:8080/accounts/denis
+```
 3. transfer between accounts:
+```
 denis - source account,
 nikolay - destination account,
 100.45 - transfer amount
 http://localhost:8080/accounts/denis/transfer/nikolay/100.45
-		
+```		
 #### Notes:
 - Application use port 8080 by default,	to change port add input parameters "-port 9090", where 9090 is new port value:
 	java -jar target/mt-1.0-SNAPSHOT.jar -port 9090
