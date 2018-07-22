@@ -4,12 +4,12 @@ The application implementation has some assumptions:
 3. Account creation is allowed with none empty string identifier and none negative initial value (zero or more).
 
 To build the application from source maven and jdk 8 (at least) is necessary.	
-	###### Build application (without test run):
-		mvn clean package -DskipTests
-	###### Run application:
-		java -jar target/mt-1.0-SNAPSHOT.jar
-	###### Run tests (It takes some time depending on current machine performance):
-		mvn test
+- Build application (without test run):
+	mvn clean package -DskipTests
+- Run application:
+	java -jar target/mt-1.0-SNAPSHOT.jar
+- Run tests (It takes some time depending on current machine performance):
+	mvn test
 	
 	Application use port 8080 by default,
 	to change port add input parameters "-port 9090", where 9090 is new port value:
