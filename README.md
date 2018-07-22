@@ -15,10 +15,12 @@ Maven and jdk 8 (at least) is necessary.
 #### Test from browser:
 All requests use HTTP GET method.
 1. create account(s):
+```
 denis,nikolay - account identifiers
 100 - initial balance
 http://localhost:8080/accounts/create/denis/123.45
 http://localhost:8080/accounts/create/nikolay/0
+```
 2. get account info:
 denis - account identifier
 http://localhost:8080/accounts/denis
