@@ -1,7 +1,7 @@
 The application implementation has some assumptions:
-	All accounts have money in the same currency.
-	Transfer is allowed only between different accounts and with positive money value.
-	Account creation is allowed with none empty string identifier and none negative initial value (zero or more).
+	1. All accounts have money in the same currency.
+	2. Transfer is allowed only between different accounts and with positive money value.
+	3. Account creation is allowed with none empty string identifier and none negative initial value (zero or more).
 
 To build the application from source maven and jdk 8 (at least) is necessary.	
 	Build application (without test run):
