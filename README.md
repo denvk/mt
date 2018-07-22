@@ -6,11 +6,17 @@
 #### To build the application from source.
 Maven and jdk 8 (at least) is necessary.	
 - Build application (without test run):
-	mvn clean package -DskipTests
+```
+mvn clean package -DskipTests
+```
 - Run application:
-	java -jar target/mt-1.0-SNAPSHOT.jar
+```
+java -jar target/mt-1.0-SNAPSHOT.jar
+```
 - Run tests (It takes some time depending on current machine performance):
-	mvn test
+```
+mvn test
+```
 	
 #### Test from browser:
 All requests use HTTP GET method.
@@ -36,6 +42,6 @@ http://localhost:8080/accounts/denis/transfer/nikolay/100.45
 #### Notes:
 - Application use port 8080 by default,	to change port add input parameters "-port 9090", where 9090 is new port value:
 ```
-	java -jar target/mt-1.0-SNAPSHOT.jar -port 9090
+java -jar target/mt-1.0-SNAPSHOT.jar -port 9090
 ```
 - In case log file is needed change mt\src\main\resources\log4j2.xml configuration and rebuild application.
